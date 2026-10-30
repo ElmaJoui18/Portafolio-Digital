@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio digital de Tu Nombre: proyectos, habilidades, experiencia y contacto.">
+    <meta name="theme-color" content="#0b0f19">
+    <meta property="og:title" content="Tu Nombre | Portafolio Digital">
+    <meta property="og:description" content="Portafolio digital: proyectos, habilidades, experiencia y contacto.">
+    <meta property="og:type" content="website">
+    <title>Tu Nombre | Portafolio Digital</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+    <!-- SKIP LINK -->
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <!-- PANEL LATERAL -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+        <div class="sidebar-header">
+            <a href="#hero" class="logo">&lt;Dev /&gt;</a>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú" aria-expanded="false">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="sidebar-links">
+                <li><a href="#hero" data-section="hero">Inicio</a></li>
+                <li><a href="#about" data-section="about">Sobre mí</a></li>
+                <li><a href="#timeline" data-section="timeline">Trayectoria</a></li>
+                <li><a href="#projects" data-section="projects">Proyectos</a></li>
+                <li><a href="#future" data-section="future">Proyectos a futuro</a></li>
+                <li><a href="#thanks" data-section="thanks">Agradecimientos</a></li>
+                <li><a href="#contact" data-section="contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+                <span class="theme-label">Oscuro</span>
+            </button>
+            <p>&copy; <span id="year"></span> Tu Nombre</p>
+        </div>
+    </aside>
+
+    <!-- BOTÓN PARA ABRIR PANEL -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" type="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </button>
+
+    <!-- OVERLAY PARA MÓVIL -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content" id="main">
+
+        <!-- SECCIÓN HERO -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content reveal">
+                <span class="welcome">Bienvenido a mi portafolio digital</span>
+                <span class="tag">Hola, mi nombre es</span>
+                <h1>Tu Nombre</h1>
+                <h2>Desarrollador &amp; Estudiante de Ingeniería de Sistemas</h2>
+                <p>Construyo soluciones digitales con enfoque en automatización, desarrollo web y tecnología.</p>
+                <div class="hero-profile">
+                    <img src="assets/profile.svg" alt="Foto de perfil de Tu Nombre" width="160" height="160" loading="lazy">
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Ver proyectos</a>
+                    <a href="#contact" class="btn secondary">Contáctame</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="mailto:tu-correo@example.com" aria-label="Correo electrónico">Correo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="about" class="about-section">
+            <h2 class="reveal">Sobre mí</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>Soy estudiante de segundo ciclo de Ingeniería de Sistemas e Informática. Me apasiona entender cómo funcionan los sistemas por dentro, desde la administración de entornos Linux hasta la programación y la seguridad informática.</p>
+                    <p>Disfruto automatizando tareas, configurando entornos y creando herramientas eficientes. Este portafolio recoge mis proyectos, aprendizajes y próximos pasos.</p>
+                </div>
+                <div class="skills-box reveal">
+                    <h3>Tecnologías y Herramientas</h3>
+                    <div class="skill-group">
+                        <h4>Lenguajes</h4>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML / CSS</li>
+                            <li>Bash</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Herramientas</h4>
+                        <ul class="skills-list">
+                            <li>Linux</li>
+                            <li>Git &amp; GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAYECTORIA -->
+        <section id="timeline" class="timeline-section">
+            <h2 class="reveal">Trayectoria</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Actualidad</span>
+                        <h3>Estudiante de Ingeniería de Sistemas</h3>
+                        <p>Segundo ciclo. Formación en programación, sistemas operativos, redes y bases de datos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Primeros proyectos personales</h3>
+                        <p>Automatización de tareas en Linux y scripts en Python para uso personal.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Inicio en programación</h3>
+                        <p>Aprendizaje de fundamentos de desarrollo web y control de versiones con Git.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="projects" class="projects-section">
+            <h2 class="reveal">Proyectos</h2>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <img src="assets/project-1.svg" alt="Vista previa del Proyecto 1" class="project-image" loading="lazy">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del primer proyecto. Explica el objetivo, funcionalidad o problema que resuelve.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="project-1.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="assets/project-2.svg" alt="Vista previa del Proyecto 2" class="project-image" loading="lazy">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del segundo proyecto. Destaca las principales características o aprendizajes.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Automatización</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="project-2.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="assets/project-3.svg" alt="Vista previa del Proyecto 3" class="project-image" loading="lazy">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del tercer proyecto. Indica su propósito o tecnologías implementadas.</p>
+                    <div class="project-tags">
+                        <span>Linux</span>
+                        <span>Bash</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="project-3.html">Ver detalle</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROYECTOS A FUTURO -->
+        <section id="future" class="detail-section">
+            <h2 class="reveal">Proyectos a futuro</h2>
+            <ul class="future-list reveal">
+                <li>Aplicación web full-stack con autenticación.</li>
+                <li>Herramienta de automatización en Python con interfaz gráfica.</li>
+                <li>Blog técnico sobre Linux, ciberseguridad y desarrollo.</li>
+            </ul>
+        </section>
+
+        <!-- AGRADECIMIENTOS -->
+        <section id="thanks" class="detail-section">
+            <h2 class="reveal">Agradecimientos</h2>
+            <p class="reveal">Gracias a las personas, comunidades y recursos que me han inspirado y apoyado en este camino. En especial a la comunidad de código abierto y a quienes comparten conocimiento de forma desinteresada.</p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="contact-section">
+            <h2 class="reveal">Contacto</h2>
+            <p class="reveal">¿Tienes alguna consulta o propuesta? ¡Hablemos!</p>
+            <div class="contact-links reveal">
+                <a href="mailto:tu-correo@example.com" class="btn primary">Enviar correo</a>
+                <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script de JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

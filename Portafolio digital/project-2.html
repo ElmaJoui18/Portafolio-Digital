@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle del Proyecto 2 del portafolio digital.">
+    <meta name="theme-color" content="#0b0f19">
+    <title>Proyecto 2 | Portafolio Digital</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+        <div class="sidebar-header">
+            <a href="index.html#hero" class="logo">&lt;Dev /&gt;</a>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú" aria-expanded="false" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="sidebar-links">
+                <li><a href="index.html#hero">Inicio</a></li>
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#timeline">Trayectoria</a></li>
+                <li><a href="index.html#projects">Proyectos</a></li>
+                <li><a href="index.html#future">Proyectos a futuro</a></li>
+                <li><a href="index.html#thanks">Agradecimientos</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+                <span class="theme-label">Oscuro</span>
+            </button>
+            <p>&copy; <span id="year"></span> Tu Nombre</p>
+        </div>
+    </aside>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" type="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </button>
+
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <main class="main-content" id="main">
+        <section class="project-detail">
+            <a href="index.html#projects" class="back-link">&larr; Volver a proyectos</a>
+            <h1>Proyecto 2</h1>
+            <div class="detail-gallery">
+                <img src="assets/project-2.svg" alt="Captura principal del Proyecto 2" class="detail-image" loading="lazy">
+                <img src="assets/placeholder.svg" alt="Captura complementaria del Proyecto 2" class="detail-image" loading="lazy">
+            </div>
+            <div class="detail-meta">
+                <span class="project-tags">
+                    <span>Python</span>
+                    <span>Python</span>
+                    <span>Python</span>
+                </span>
+            </div>
+            <h2>Descripción</h2>
+            <p>Descripción detallada del primer proyecto. Explica el contexto, el problema que resuelve y su funcionamiento general.</p>
+            <h2>Objetivo</h2>
+            <p>Objetivo principal del proyecto y qué se buscaba lograr.</p>
+            <h2>Solución</h2>
+            <p>Cómo se implementó la solución, decisiones técnicas y herramientas utilizadas.</p>
+            <h2>Aprendizajes</h2>
+            <p>Lo aprendido durante el desarrollo y posibles mejoras futuras.</p>
+        </section>
+            <section class="devlog" data-project="project-2">
+                <h2>Bitácora</h2>
+                <p class="devlog-intro">Mis notas personales y reflexiones durante el desarrollo.</p>
+                <div class="devlog-entries" id="devlogEntries"></div>
+                <form class="devlog-form" id="devlogForm">
+                    <textarea id="devlogInput" placeholder="Escribe una nota..." rows="3"></textarea>
+                    <button type="submit" class="btn primary">Agregar nota</button>
+                </form>
+            </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
